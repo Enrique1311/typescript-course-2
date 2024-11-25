@@ -1,11 +1,11 @@
 // enum declara cuáles son las opciones que tengo para asignar valores a una variable
-enum ROLES {
+export enum ROLES {
   ADMIN = 'admin',
   SELLER = 'seller',
   CUSTOMER = 'customer',
 }
 
-type User = {
+export type User = {
   username: string;
   role: ROLES;
 };
