@@ -1,6 +1,6 @@
 type Sizes = 'S' | 'M' | 'L' | 'XL';
 
-// * con type (se puede utilizar para definir sólo un tipo de valores)
+// * con type (se puede utilizar para definir sólo un tipo de valores y no se puede extender)
 // type Product = {
 //   id: string | number;
 //   title: string;
@@ -9,7 +9,7 @@ type Sizes = 'S' | 'M' | 'L' | 'XL';
 //   size?: Sizes;
 // };
 
-// * con interface (cumple la misma función que type pero se diferencia de type, porque sólo se pueden definir varios valores)
+// * con interface (cumple la misma función que type pero se diferencia de type, porque sólo se pueden definir varios valores y se puede extender)
 interface Product {
   id: string | number;
   title: string;
@@ -27,3 +27,7 @@ products.push({
   stock: 10,
   size: 'M',
 });
+
+const addProduct = (data: Product) => {
+  products.push(data);
+};
