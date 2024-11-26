@@ -25,7 +25,6 @@ const rtaString = parseString(['A', 'b', 'c', 'd', 'e']);
 
 // Para trabajar de forma segura con el array debemos verificar que lo sea
 if (typeof rtaString === 'string') {
-  rtaString.toLowerCase();
+  let rtaStringCopy = rtaString.toLowerCase();
+  console.log('Array to string: ', rtaStringCopy);
 }
-
-console.log('Array to string: ' + rtaString);
