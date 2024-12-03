@@ -30,4 +30,5 @@ findProducts({
   stock: 10,
   color: 'red',
   createdAt: new Date(),
+  tags: ['A', 'B', 'C'],
 });

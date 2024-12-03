@@ -39,5 +39,6 @@ export const updateProduct = (
 };
 
 export const findProducts = (dto: FindProductDto): Product[] => {
+  dto.tags?.pop();
   return products;
 };
